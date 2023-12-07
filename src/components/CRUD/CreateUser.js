@@ -38,7 +38,7 @@ const handleSubmit = (event) => {
     formdata.append("lineid", data.lineid)
     formdata.append("work", data.work)
     formdata.append("image", data.image)
-    axios.post("https://cautious-pink-panama-hat.cyclic.app/create", formdata) 
+    axios.post("http://localhost:3333/create", formdata) 
     .then(res => {
         navigate('/menu1')
     })

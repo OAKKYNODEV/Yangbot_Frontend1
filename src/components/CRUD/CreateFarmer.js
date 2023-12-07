@@ -42,7 +42,7 @@ const handleSubmit = (event) => {
     formdata.append("sex", data.sex)
     formdata.append("work", data.work)
     formdata.append("area", data.area)
-    axios.post("https://cautious-pink-panama-hat.cyclic.app/create", formdata) 
+    axios.post("http://localhost:3333/create", formdata) 
     .then(res => {
         navigate('/user')
     })

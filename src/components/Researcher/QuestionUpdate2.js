@@ -17,7 +17,7 @@ export default function QuestionTypeUpdate2() {
   function handleSubmit(event) {
     event.preventDefault();
     axios
-      .put(`https://cautious-pink-panama-hat.cyclic.app/${id}`, { QuestionType: selectedQuestionType })
+      .put(`http://localhost:3333/${id}`, { QuestionType: selectedQuestionType })
       .then((res) => {
         console.log(res);
         navigate('/question2page');

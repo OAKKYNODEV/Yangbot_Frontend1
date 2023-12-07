@@ -16,7 +16,7 @@ function FileTool() {
   const openimg = async () => {
     // เรียกใช้ endpoint เพื่อดึงรายการรูปภาพจาก Express.js
     try {
-      const response = await fetch('https://cautious-pink-panama-hat.cyclic.app/publicimg');
+      const response = await fetch('http://localhost:3333/publicimg');
       if (response.ok) {
         const data = await response.json();
         const images = data.images;

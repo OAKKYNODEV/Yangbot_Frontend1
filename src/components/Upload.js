@@ -13,7 +13,7 @@ const Upload = () => {
         event.preventDefault();
         const formdata = new FormData ();
         formdata.append("image", data.image)
-        axios.post("https://cautious-pink-panama-hat.cyclic.app/uploadimg", formdata) 
+        axios.post("http://localhost:3333/uploadimg", formdata) 
         .then(res => {
             window.location.reload();
             alert(`อัพโหลดรูปภาพเรียบร้อย`);

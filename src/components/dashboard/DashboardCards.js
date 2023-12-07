@@ -5,16 +5,16 @@ function DashboardCards() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("https://cautious-pink-panama-hat.cyclic.app/linebot_image");
+        const response = await fetch("http://localhost:3333/linebot_image");
         const data1 = await response.json();
 
-        const response2 = await fetch("https://cautious-pink-panama-hat.cyclic.app/linebot_log");
+        const response2 = await fetch("http://localhost:3333/linebot_log");
         const data2 = await response2.json();
 
-        const response3 = await fetch("https://cautious-pink-panama-hat.cyclic.app/webapp_uploadimg_count");
+        const response3 = await fetch("http://localhost:3333/webapp_uploadimg_count");
         const data3 = await response3.json();
 
-        const response4 = await fetch("https://cautious-pink-panama-hat.cyclic.app/webapp_researcher_count");
+        const response4 = await fetch("http://localhost:3333/webapp_researcher_count");
         const data4 = await response4.json();
         setCardData([
           {

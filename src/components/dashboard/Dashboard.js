@@ -28,7 +28,7 @@ function Dashboard() {
       }, [])
 
       const UserGet = () => {
-        fetch("https://cautious-pink-panama-hat.cyclic.app/linebot_log2")
+        fetch("http://localhost:3333/linebot_log2")
         .then(res => res.json())
         .then(
           (result) => {

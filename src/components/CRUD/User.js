@@ -47,7 +47,7 @@ export default function ResearcherLog() {
       }, [])
 
       const UserGet = () => {
-        fetch("https://cautious-pink-panama-hat.cyclic.app/userlog")
+        fetch("http://localhost:3333/userlog")
         .then(res => res.json())
         .then(
           (result) => {
@@ -60,7 +60,7 @@ export default function ResearcherLog() {
         const shouldDelete = window.confirm("คุณแน่ใจหรือไม่ที่ต้องการลบบัญชีผู้ใช้งานนี้?");
         if (shouldDelete) {
           try {
-            await axios.delete('https://cautious-pink-panama-hat.cyclic.app/userdel/' + id)
+            await axios.delete('http://localhost:3333/userdel/' + id)
             window.location = '/chalothon/yangbot_frontend/menu1'
             alert("ลบบัญชีผู้ใช้งานเรียบร้อย")
           } catch (err) {
@@ -84,7 +84,7 @@ export default function ResearcherLog() {
         formData.append('import-excel', file);
     
         try {
-          const response = await axios.post('https://cautious-pink-panama-hat.cyclic.app/import-excel', formData, {
+          const response = await axios.post('http://localhost:3333/import-excel', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },

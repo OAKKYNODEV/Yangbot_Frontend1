@@ -13,7 +13,7 @@ function VisitorNavbar() {
   axios.defaults.withCredentials = true;
 
   const  handleLogout= () => {
-    axios.get('https://cautious-pink-panama-hat.cyclic.app/logout')
+    axios.get('http://localhost:3333//logout')
     .then(res => {
         navigate('/start')
 

@@ -19,7 +19,7 @@ function DoughnutChart() {
   useEffect(() => {
     // ส่งคำขอ GET ไปยัง API ของคุณ เพื่อดึงข้อมูลจาก URL /linebot_log_count
     axios
-      .get("https://cautious-pink-panama-hat.cyclic.app/linebot_log_count_types") // เปลี่ยน URL เป็น URL ของ API ของคุณ
+      .get("http://localhost:3333/linebot_log_count_types") // เปลี่ยน URL เป็น URL ของ API ของคุณ
       .then((response) => {
         // ดึงข้อมูลจาก API และอัปเดตแผนภูมิ
         const labels = response.data.map((entry) => entry.QuestionType);

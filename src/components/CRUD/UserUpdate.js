@@ -22,7 +22,7 @@ const navigate =useNavigate();
 const {id} = useParams();
 
 useEffect(() => {
-    axios.get('https://cautious-pink-panama-hat.cyclic.app/get/'+id)
+    axios.get('http://localhost:3333/get/'+id)
     .then(res => {
         setData({...data, email: res.data.Result[0].email,
             username: res.data.Result[0].username,
@@ -40,7 +40,7 @@ useEffect(() => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put("https://cautious-pink-panama-hat.cyclic.app/update/"+id, data) 
+    axios.put("http://localhost:3333/update/"+id, data) 
     .then(res => {
         if(res.data.Status == "Success"){
             navigate('/menu1')

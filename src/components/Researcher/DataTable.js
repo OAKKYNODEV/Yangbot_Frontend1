@@ -47,7 +47,7 @@ export default function ResearcherLog() {
       }, [])
 
       const UserGet = () => {
-        fetch("https://cautious-pink-panama-hat.cyclic.app/userlog")
+        fetch("http://localhost:3333/userlog")
         .then(res => res.json())
         .then(
           (result) => {

@@ -25,7 +25,7 @@ export default function BasicBars() {
   }
 
   useEffect(() => {
-    axios.get('https://cautious-pink-panama-hat.cyclic.app/barimg')
+    axios.get('http://localhost:3333/barimg')
       .then((response) => {
         const rawData = response.data;
   

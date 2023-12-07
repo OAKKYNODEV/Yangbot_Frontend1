@@ -23,7 +23,7 @@ export default function QuestionType() {
       }, [])
 
       const UserGet = () => {
-        fetch("https://cautious-pink-panama-hat.cyclic.app/linebot_log2")
+        fetch("http://localhost:3333/linebot_log2")
         .then(res => res.json())
         .then(
           (result) => {
@@ -34,7 +34,7 @@ export default function QuestionType() {
 
       const handleDelete = async (id) => {
           try {
-            await axios.delete('https://cautious-pink-panama-hat.cyclic.app/userdel/'+id)
+            await axios.delete('http://localhost:3333/userdel/'+id)
             window.location.reload()
             alert ("ลบบัญชีผู้ใช้งานเรียบร้อย")
           }catch(err) {

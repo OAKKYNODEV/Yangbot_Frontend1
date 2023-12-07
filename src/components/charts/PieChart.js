@@ -11,7 +11,7 @@ export default function BasicBars() {
   
 
  useEffect(() => {
-  axios.get('https://cautious-pink-panama-hat.cyclic.app/linebot_log_count')
+  axios.get('http://localhost:3333/linebot_log_count')
     .then((response) => {
       const rawData = response.data;
       // 1. กรองข้อมูลที่มีค่าซ้ำ

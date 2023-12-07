@@ -20,7 +20,7 @@ const Tables = () => {
   }, [])
 
   const UserGet = () => {
-    fetch("https://cautious-pink-panama-hat.cyclic.app/publicimg")
+    fetch("http://localhost:3333/publicimg")
       .then(res => res.json())
       .then((result) => {
         console.log(result);

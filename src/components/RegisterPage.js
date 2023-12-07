@@ -20,7 +20,7 @@ function RegisterPage() {
     event.preventDefault();
 
     axios
-      .post('https://cautious-pink-panama-hat.cyclic.app/createvisitor', data)
+      .post('http://localhost:3333/createvisitor', data)
       .then((res) => {
         navigate('/');
       })
